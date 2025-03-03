@@ -66,6 +66,33 @@
         .contact-button:hover {
             background-color: #7f4a3d;
         }
+        .takemethere-button {
+            background: linear-gradient(135deg, #4285F4, #34A853);
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        .takemethere-button::before {
+            content: '→'; /* Arrow character */
+            font-size: 20px;
+            margin-left: 10px; /* Space between text and arrow */
+            position: absolute;
+            right: 10p
+        }
+
+        .takemethere-button:hover {
+            background: linear-gradient(135deg, #0F9D58, #DB4437); /* Darker shade on hover */
+        }
 
         /* Image container style */
         .image-container {
@@ -251,6 +278,8 @@
         <a href="#inventory">Product</a>
     </div>
     <a href="#contact" class="contact-button">Order Online</a>
+    <!-- Take me there link -->
+    <a href="https://www.google.com/maps/dir//349+Liquor+Beer+%26+Wine-+E+Cig+and+Vape+Store,+1001-1201+W+CR-137,+Midland,+TX+79706/@31.9323208,-102.0641593,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x86f97d660bc1cbdb:0xfad36406067807e!2m2!1d-102.0615844!2d31.9323163?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="takemethere-button" target="_blank">Take Me There</a>
 </header>
 
 <!-- Place the image container with the store name, tagline, and button on the image -->
